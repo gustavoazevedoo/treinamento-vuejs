@@ -111,7 +111,7 @@ async function handleSubmit() {
 
     if (!errors) {
       window.localStorage.setItem("token", data.token);
-      router().push({ name: "Feedbacks" });
+      router.push({ name: "Feedbacks" });
       state.value.isLoading = false;
       modal.close();
       return;
@@ -128,8 +128,8 @@ async function handleSubmit() {
 
     state.value.isLoading = false;
   } catch (error) {
-    state.value.hasErrors = !!error;
     state.value.isLoading = false;
+    state.value.hasErrors = !!error;
     toast.error("Ocorreu um erro ao fazer login");
   }
 }
