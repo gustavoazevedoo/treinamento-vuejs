@@ -1,4 +1,4 @@
-module.exports = {
+export const palette = {
   brand: {
     main: "#EF4983",
     gray: "#F9F9F9",

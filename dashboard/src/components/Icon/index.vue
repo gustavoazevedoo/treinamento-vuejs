@@ -9,9 +9,11 @@
 <script setup>
 import { markRaw } from "vue";
 import Loading from "./Loading.vue";
+import Copy from "./Copy.vue";
 
 const icons = {
   Loading: markRaw(Loading),
+  Copy: markRaw(Copy),
 };
 
 defineProps({

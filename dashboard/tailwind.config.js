@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const palette = require("./palette");
+import { palette } from "./palette";
 
 export default {
   content: [

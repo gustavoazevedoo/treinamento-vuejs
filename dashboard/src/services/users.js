@@ -5,4 +5,12 @@ export default (httpCLient) => ({
       data: response.data,
     };
   },
+
+  generateApiKey: async () => {
+    const response = await httpCLient.post("/users/me/apikey");
+
+    return {
+      data: response.data,
+    };
+  },
 });
